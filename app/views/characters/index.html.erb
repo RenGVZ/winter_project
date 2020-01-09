@@ -1,0 +1,32 @@
+<div class = "container main">
+
+  <div class = "container">
+    <div class="row">
+      <div class="col">
+        <h1>Jedi Order</h1>
+          <img class ="force-img" src="https://cdn4.iconfinder.com/data/icons/star-wars-13/50/28-512.png">
+      </div>
+
+      <div class= "col-7">
+      </div>
+
+      <div class="col">
+        <h1>Sith Order</h1>
+          <img class ="sith-img" src="https://vignette.wikia.nocookie.net/starwars/images/b/bf/Sith_canon.svg/revision/latest?cb=20160702013109">
+      </div>
+    </div>
+  </div>
+      
+      <div class ="container">
+        <% @characters.each do |character| %>
+        <div class= "row justify-content-center">
+          <div class = "card col-4">
+            <h2><a class= "name"><%= link_to character.name, character_path(character) %></a></h2>
+            <p>Species: <%= character.species %></p>
+            <p>Homeworld: <%= character.homeworld %></p>
+            <p>Master(s): <%= character.master %></p>
+          </div>
+        </div> 
+        <% end %>
+      </div>
+</div>

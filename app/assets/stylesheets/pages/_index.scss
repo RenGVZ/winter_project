@@ -1,2 +1,108 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.main {
+  background-image: linear-gradient(to right, rgba(19, 54, 85, 0.961), #962b32fc);
+}
+
+.individual {
+  background-image: linear-gradient(to right, rgb(19, 54, 85), #962b32);
+  height: 1500px;
+}
+
+.desc {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+.force-img {
+  height: 100px;
+}
+.sith-img {
+  height: 100px;
+}
+
+.card {
+  background-color: #402b45;
+  color: white;
+  margin: 4px;
+  border-radius: 4px;
+  padding: 12px;
+  padding-left: 16px;
+  // display: grid;
+  // grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(196, 104, 104);
+  text-decoration: none;
+}
+.b {
+  background-color: rgb(216, 51, 51);
+  width: 76px;
+  text-align: center;
+  margin: 2em;
+  border-radius: 4px;
+  padding: 4px;
+}
+body{
+  background:#112;
+  color:#999;
+}
+.saber {
+ 
+  width: 679px; 
+  height: 185px;
+  position: relative;
+  display: block;
+ transition: all .7s ease;
+}
+.saber img{ 
+  width:400px;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.light {
+  background: #FFF;
+  height: 40px;
+  width: 0px;
+  box-shadow: 0 0 12px 8px #001 inset;
+  position:absolute;
+  top:55px;
+  left: 334px;
+  border-radius: 20px;
+  opacity:0;
+  transition: all .2s;
+ }
+.saber:active .light {
+  width: 650px;
+  box-shadow: 0 0 22px 9px #F00, 0 0 12px 8px #F00 inset;
+  opacity:1;
+   
+}
+
+.saber:active .luke {
+  box-shadow: 0 0 22px 9px #0ff, 0 0 12px 8px #0ff inset;
+  
+}
+
+.space {
+  height: 500px;
+}
+
+.saber:active .mace {
+  box-shadow: 0 0 22px 9px rgba(247, 0, 255, 0.92), 0 0 12px 8px rgba(247, 0, 255, 0.92) inset;
+  
+}
+
+iframe{
+  display:none
+}
