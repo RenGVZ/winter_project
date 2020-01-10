@@ -1,6 +1,8 @@
 // Import page-specific CSS files here.
 @import "home";
 
+// General CSS
+
 .main {
   background-image: linear-gradient(to right, rgba(19, 54, 85, 0.961), #962b32fc);
 }
@@ -8,6 +10,19 @@
 .individual {
   background-image: linear-gradient(to right, rgb(19, 54, 85), #962b32);
   height: 1500px;
+}
+
+.center {
+  text-align: center;
+}
+
+.char {
+  height:150px;
+  width:150px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .desc {
@@ -19,10 +34,16 @@ h1 {
 }
 
 .force-img {
-  height: 100px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .sith-img {
-  height: 100px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
@@ -51,7 +72,13 @@ a:hover {
   margin: 2em;
   border-radius: 4px;
   padding: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+// Light Saber CSS
+
 body{
   background:#112;
   color:#999;
@@ -105,4 +132,33 @@ body{
 
 iframe{
   display:none
+}
+
+//Footer CSS
+
+.footer {
+  background: #10142F;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgb(171, 170, 170);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: rgb(255, 255, 255);
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
 }

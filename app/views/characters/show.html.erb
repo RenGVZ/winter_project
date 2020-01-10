@@ -1,40 +1,17 @@
 <div class ="container individual">
-  <div class= "row">
-    <div class= "col">
-      <h1><%= @character.name %> </h1>
-          <h3 class ="desc">Force: <%= @character.force %></h3>
-          <p class ="desc">Species: <%= @character.species %></p>
-          <p class ="desc">Homeworld: <%= @character.homeworld %></p>
-          <p class ="desc">Master(s): <%= @character.master %></p>
+  <div class= "row justify-content-center">
+    <div class= "col-4 justify-content-center">
+      <h1 class="text-center m-4"><%= @character.name %> </h1>
+        <img src= <%= @character.img %> class="char center-block">
+        <h3 class ="desc text-center m-3">Force: <%= link_to @character.force, light_characters_path %></h3>
+        <p class ="desc text-center">Species: <%= @character.species %></p>
+        <p class ="desc text-center">Homeworld: <%= @character.homeworld %></p>
+        <p class ="desc text-center">Master(s): <%= @character.master %></p>
     </div>
   </div>
 
     <div class = "b">
       <%= link_to "Return", root_path %>
     </div>
-
-<h2>Good... Good, let the hate flow through you!</h2>
-<div class="saber">
-      <div class="light"></div>
-  <a href="http://twatech.org/shownotes/lightsaber%20sounds/on0.wav" target="sonido"><img src="http://www.starstore.com/acatalog/Vader_LE_Lightsaber-l.gif"></a>
-</div>
-
-<h2>The force is strong with this one...</h2>
-<div class="saber">
-      <div class="light luke"></div>
-  <a href="http://twatech.org/shownotes/lightsaber%20sounds/off0.wav" target="sonido"><img src="http://www.starstore.com/acatalog/Vader_LE_Lightsaber-l.gif"></a>
-</div>
-
-<div class="space">
-</div>
-
-
-<h2>Hold up... Is that Mace-fucking Windu...?</h2>
-<div class="saber">
-      <div class="light mace"></div>
-  <a href="http://twatech.org/shownotes/lightsaber%20sounds/off0.wav" target="sonido"><img src="http://www.starstore.com/acatalog/Vader_LE_Lightsaber-l.gif"></a>
-</div>
-
-<iframe  frameborder="0" name="sonido"></iframe>
     
 </div>

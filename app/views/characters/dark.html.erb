@@ -1,0 +1,28 @@
+<div class ="container main" style = "height: 1000px;">
+  <div class="row">
+    <div class ="col text-center m-3">
+      <h1>The Sith Order</h1>
+      <img class ="sith-img" src="https://vignette.wikia.nocookie.net/starwars/images/b/bf/Sith_canon.svg/revision/latest?cb=20160702013109">
+      <div class ="b">
+        <%= link_to "Main", characters_path %>
+      </div>
+    </div>
+  </div>
+
+  <div class="saber">
+    <div class="light"></div>
+    <a target="sonido"><img src="http://www.starstore.com/acatalog/Vader_LE_Lightsaber-l.gif"></a>
+  </div>
+
+  <div class ="container center">
+    <% @dark.each do |character| %>
+      <div class= "row justify-content-center">
+        <div class = "card col-4 justify-content-center">
+          <h2><a class= "name"><%= link_to character.name, character_path(character) %></a></h2>
+          <img src= <%= character.img %> class="char center-block">
+        </div>
+      </div> 
+    <% end %>
+  </div>
+
+</div>

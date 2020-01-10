@@ -3,7 +3,7 @@
   <div class = "container">
     <div class="row">
       <div class="col">
-        <h1>Jedi Order</h1>
+        <h1><%= link_to "Jedi Order", light_characters_path%></h1>
           <img class ="force-img" src="https://cdn4.iconfinder.com/data/icons/star-wars-13/50/28-512.png">
       </div>
 
@@ -11,20 +11,18 @@
       </div>
 
       <div class="col">
-        <h1>Sith Order</h1>
+        <h1> <%= link_to "Sith Order", dark_characters_path %> </h1>
           <img class ="sith-img" src="https://vignette.wikia.nocookie.net/starwars/images/b/bf/Sith_canon.svg/revision/latest?cb=20160702013109">
       </div>
     </div>
   </div>
       
-      <div class ="container">
+      <div class ="container center">
         <% @characters.each do |character| %>
         <div class= "row justify-content-center">
-          <div class = "card col-4">
+          <div class = "card col-4 justify-content-center">
             <h2><a class= "name"><%= link_to character.name, character_path(character) %></a></h2>
-            <p>Species: <%= character.species %></p>
-            <p>Homeworld: <%= character.homeworld %></p>
-            <p>Master(s): <%= character.master %></p>
+            <img src= <%= character.img %> class="char center-block">
           </div>
         </div> 
         <% end %>
